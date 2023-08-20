@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html data-theme="light" lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -29,10 +29,11 @@
 <body class="font-work-sans">
     <!-- header section -->
     <header class="bg-[#F9F6E2]">
-        <nav class="flex flex-col lg:flex-row items-center justify-center gap-7">
+        <nav class="flex flex-col lg:flex-row items-center justify-center gap-7 pt-14">
             <div class="space-y-12 text-center">
                 <p class="text-2xl font-medium">---SALE FEVER---</p>
-                <h1 class="text-5xl font-bold">Purchase TK 200 or <br> above & get <span class="text-[#E527B2]">20%
+                <h1 class="text-4xl lg:text-5xl font-bold">Purchase TK 200 or <br> above & get <span
+                        class="text-[#E527B2]">20%
                         off</span></h1>
                 <div class="flex items-center gap-4 justify-center">
                     <p class="text-2xl font-medium">Use Promo Code</p>
@@ -46,7 +47,217 @@
     </header>
 
     <!-- main section -->
-    <main></main>
+    <main class="w-5/6 mx-auto">
+        <section>
+            <h4 class="text-2xl font-semibold mt-28 mb-8">Kitchenware</h4>
+            <div class="flex items-center flex-col lg:flex-row gap-6">
+                <div class="flex flex-col lg:flex-row gap-6 items-center">
+                    <!-- card 1 -->
+                    <div class="card h-80 shadow-lg p-5 space-y-2">
+                        <figure class="px-10 pt-10 bg-[#1111110D]">
+                            <img class="p-8" src="./images/prod1.png" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="flex items-center justify-center">
+                            <img src="./Frame (1).png" alt="">
+                            <img src="./Frame (1).png" alt="">
+                            <img src="./Frame (1).png" alt="">
+                            <img src="./Frame.png" alt="">
+                            <img src="./Frame.png" alt="">
+                        </div>
+                        <div class="text-center">
+                            <h2 class="text-xl font-semibold">K. Accessories</h2>
+                            <p class="text-[#11111180] text-xl font-normal">39.00 TK</p>
+                        </div>
+                    </div>
+
+                    <!-- card 2 -->
+                    <div class="card h-80 shadow-lg p-5 space-y-2">
+                        <figure class="px-10 pt-10 bg-[#1111110D]">
+                            <img class="p-5" src="./images/prod2.png" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="flex items-center justify-center">
+                            <img src="./Frame.png" alt="">
+                            <img src="./Frame.png" alt="">
+                            <img src="./Frame.png" alt="">
+                            <img src="./Frame.png" alt="">
+                            <img src="./Frame.png" alt="">
+                        </div>
+                        <div class="text-center">
+                            <h2 class="text-xl font-semibold">K. Accessories</h2>
+                            <p class="text-[#11111180] text-xl font-normal">25.00 TK</p>
+                        </div>
+                    </div>
+
+                    <!-- card 3 -->
+                    <div class="card h-80 shadow-lg p-5 space-y-2">
+                        <figure class="px-10 pt-10 bg-[#1111110D]">
+                            <img class="p-5" src="./images/prod3.png" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="flex items-center justify-center">
+                            <img src="./Frame (1).png" alt="">
+                            <img src="./Frame (1).png" alt="">
+                            <img src="./Frame (1).png" alt="">
+                            <img src="./Frame (1).png" alt="">
+                            <img src="./Frame.png" alt="">
+                        </div>
+                        <div class="text-center">
+                            <h2 class="text-xl font-semibold">Home Cooker</h2>
+                            <p class="text-[#11111180] text-xl font-normal">49.00 TK</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card shadow-lg p-5 space-y-4">
+                        <h4 class="text-lg font-medium">Have coupon?</h4>
+                        <div class="flex items-center">
+                            <input class="pl-4 rounded-lg h-11 border" type="text" name="" id=""
+                                placeholder="Coupon code">
+                            <button class="btn bg-[#E527B2] text-white">Apply</button>
+                        </div>
+                    </div>
+                    <div class="card shadow-lg p-5 space-y-4 mt-6">
+                        <h4 class="text-lg font-medium">Have Things!!</h4>
+                        <hr>
+                        <p>Total price:</p>
+                        <p>Discount:</p>
+                        <p>Total:</p>
+                        <hr>
+                        <!-- Open the modal using ID.showModal() method -->
+                        <button class="btn bg-[#E527B2] text-white" onclick="my_modal_5.showModal()">Make
+                            Purchase</button>
+                        <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                            <form method="dialog" class="modal-box text-center py-24">
+                                <img class="mx-auto" src="./images/congo.png" alt="">
+                                <h3 class="font-bold text-5xl">Congratulations</h3>
+                                <p class="pt-4 pb-10">Your Purchase the product</p>
+                                <button class="btn bg-[#E527B2] text-white">Go Home</button>
+                            </form>
+                        </dialog>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sportswear section -->
+        <section>
+            <h4 class="text-2xl font-semibold mt-14 mb-8">Sportswear</h4>
+            <div class="flex flex-col lg:flex-row gap-6 items-center justify-start">
+                <!-- card 1 -->
+                <div class="card h-80 w-[245px] shadow-lg p-5 space-y-2">
+                    <figure class="px-10 pt-10 bg-[#1111110D]">
+                        <img class="p-5" src="./images/prod4.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="flex items-center justify-center">
+                        <img src="./Frame (1).png" alt="">
+                        <img src="./Frame (1).png" alt="">
+                        <img src="./Frame.png" alt="">
+                        <img src="./Frame.png" alt="">
+                        <img src="./Frame.png" alt="">
+                    </div>
+                    <div class="text-center">
+                        <h2 class="text-xl font-semibold">Sports Back Cap</h2>
+                        <p class="text-[#11111180] text-xl font-normal">49.00 TK</p>
+                    </div>
+                </div>
+
+                <!-- card 2 -->
+                <div class="card h-80 w-[245px] shadow-lg p-5 space-y-2">
+                    <figure class="px-10 pt-10 bg-[#1111110D]">
+                        <img class="p-5" src="./images/prod5.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="flex items-center justify-center">
+                        <img src="./Frame (1).png" alt="">
+                        <img src="./Frame (1).png" alt="">
+                        <img src="./Frame (1).png" alt="">
+                        <img src="./Frame.png" alt="">
+                        <img src="./Frame.png" alt="">
+                    </div>
+                    <div class="text-center">
+                        <h2 class="text-xl font-semibold">Full Jersey Set</h2>
+                        <p class="text-[#11111180] text-xl font-normal">69.00 TK</p>
+                    </div>
+                </div>
+
+                <!-- card 3 -->
+                <div class="card h-80 w-[245px] shadow-lg p-5 space-y-2">
+                    <figure class="px-10 pt-10 bg-[#1111110D]">
+                        <img class="p-5" src="./images/prod6.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="flex items-center justify-center">
+                        <img src="./Frame (1).png" alt="">
+                        <img src="./Frame (1).png" alt="">
+                        <img src="./Frame (1).png" alt="">
+                        <img src="./Frame (1).png" alt="">
+                        <img src="./Frame.png" alt="">
+                    </div>
+                    <div class="text-center">
+                        <h2 class="text-xl font-semibold">Sports cates</h2>
+                        <p class="text-[#11111180] text-xl font-normal">159.00 TK</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Furniture section -->
+        <section>
+            <h4 class="text-2xl font-semibold mt-14 mb-8">Furniture</h4>
+            <div class="flex flex-col lg:flex-row gap-6 items-center justify-start">
+                <!-- card 1 -->
+                <div class="card h-80 w-[245px] shadow-lg p-5 space-y-2">
+                    <figure class="px-10 pt-10 bg-[#1111110D]">
+                        <img class="p-5" src="./images/prod7.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="flex items-center justify-center">
+                        <img src="./Frame (1).png" alt="">
+                        <img src="./Frame (1).png" alt="">
+                        <img src="./Frame.png" alt="">
+                        <img src="./Frame.png" alt="">
+                        <img src="./Frame.png" alt="">
+                    </div>
+                    <div class="text-center">
+                        <h2 class="text-xl font-semibold">Single Relax Chair</h2>
+                        <p class="text-[#11111180] text-xl font-normal">185.00 TK</p>
+                    </div>
+                </div>
+
+                <!-- card 2 -->
+                <div class="card h-80 w-[245px] shadow-lg p-5 space-y-2">
+                    <figure class="px-10 pt-10 bg-[#1111110D]">
+                        <img class="p-5" src="./images/prod8.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="flex items-center justify-center">
+                        <img src="./Frame (1).png" alt="">
+                        <img src="./Frame (1).png" alt="">
+                        <img src="./Frame (1).png" alt="">
+                        <img src="./Frame (1).png" alt="">
+                        <img src="./Frame (1).png" alt="">
+                    </div>
+                    <div class="text-center">
+                        <h2 class="text-xl font-semibold">Children play</h2>
+                        <p class="text-[#11111180] text-xl font-normal">299.00 TK</p>
+                    </div>
+                </div>
+
+                <!-- card 3 -->
+                <div class="card h-80 w-[245px] shadow-lg p-5 space-y-2">
+                    <figure class="px-10 pt-10 bg-[#1111110D]">
+                        <img class="p-5" src="./images/prod9.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="flex items-center justify-center">
+                        <img src="./Frame (1).png" alt="">
+                        <img src="./Frame (1).png" alt="">
+                        <img src="./Frame (1).png" alt="">
+                        <img src="./Frame (1).png" alt="">
+                        <img src="./Frame (1).png" alt="">
+                    </div>
+                    <div class="text-center">
+                        <h2 class="text-xl font-semibold">Flexible Sofa</h2>
+                        <p class="text-[#11111180] text-xl font-normal">339.00 TK</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- footer section -->
     <footer></footer>
