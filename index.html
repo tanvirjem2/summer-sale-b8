@@ -50,10 +50,10 @@
     <main class="w-5/6 mx-auto">
         <section>
             <h4 class="text-2xl font-semibold mt-28 mb-8">Kitchenware</h4>
-            <div class="flex items-center flex-col lg:flex-row gap-6">
-                <div class="flex flex-col lg:flex-row gap-6 items-center">
+            <div class="flex items-center flex-col lg:flex-row justify-start gap-6">
+                <div class="flex flex-col lg:flex-row gap-6 items-center justify-start">
                     <!-- card 1 -->
-                    <div class="card h-80 shadow-lg p-5 space-y-2">
+                    <div class="card h-80 shadow-lg p-5 space-y-2" onclick="FindProductName(this)">
                         <figure class="px-10 pt-10 bg-[#1111110D]">
                             <img class="p-8" src="./images/prod1.png" alt="Shoes" class="rounded-xl" />
                         </figure>
@@ -71,7 +71,7 @@
                     </div>
 
                     <!-- card 2 -->
-                    <div class="card h-80 shadow-lg p-5 space-y-2">
+                    <div class="card h-80 shadow-lg p-5 space-y-2" onclick="FindProductName(this)">
                         <figure class="px-10 pt-10 bg-[#1111110D]">
                             <img class="p-5" src="./images/prod2.png" alt="Shoes" class="rounded-xl" />
                         </figure>
@@ -89,8 +89,8 @@
                     </div>
 
                     <!-- card 3 -->
-                    <div class="card h-80 shadow-lg p-5 space-y-2">
-                        <figure class="px-10 pt-10 bg-[#1111110D]">
+                    <div class="card h-80 shadow-lg p-5 space-y-2" onclick="FindProductName(this)">
+                        <figure class=" px-10 pt-10 bg-[#1111110D]">
                             <img class="p-5" src="./images/prod3.png" alt="Shoes" class="rounded-xl" />
                         </figure>
                         <div class="flex items-center justify-center">
@@ -110,27 +110,30 @@
                     <div class="card shadow-lg p-5 space-y-4">
                         <h4 class="text-lg font-medium">Have coupon?</h4>
                         <div class="flex items-center">
-                            <input class="pl-4 rounded-lg h-11 border" type="text" name="" id=""
+                            <input class="pl-4 rounded-lg h-11 border" type="text" name="" id="coupon-code"
                                 placeholder="Coupon code">
-                            <button class="btn bg-[#E527B2] text-white">Apply</button>
+                            <button id="apply-btn" class="btn bg-[#E527B2] text-white" disabled>Apply</button>
                         </div>
                     </div>
                     <div class="card shadow-lg p-5 space-y-4 mt-6">
-                        <h4 class="text-lg font-medium">Have Things!!</h4>
+                        <div id="product-name">
+                            <!-- Set names -->
+                        </div>
                         <hr>
-                        <p>Total price:</p>
-                        <p>Discount:</p>
-                        <p>Total:</p>
+                        <p class="text-lg font-medium">Total price: <span id="total-price"></span>TK</p>
+                        <p class="text-lg font-medium">Discount: <span id="discount-price"></span>TK</p>
+                        <p class="text-lg font-medium">Total: <span id="total"></span>TK</p>
                         <hr>
                         <!-- Open the modal using ID.showModal() method -->
-                        <button class="btn bg-[#E527B2] text-white" onclick="my_modal_5.showModal()">Make
+                        <button id="make-purchase-btn" class="btn bg-[#E527B2] text-white"
+                            onclick="my_modal_5.showModal()" disabled>Make
                             Purchase</button>
                         <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
                             <form method="dialog" class="modal-box text-center py-24">
                                 <img class="mx-auto" src="./images/congo.png" alt="">
                                 <h3 class="font-bold text-5xl">Congratulations</h3>
                                 <p class="pt-4 pb-10">Your Purchase the product</p>
-                                <button class="btn bg-[#E527B2] text-white">Go Home</button>
+                                <button id="go-home-btn" class="btn bg-[#E527B2] text-white">Go Home</button>
                             </form>
                         </dialog>
                     </div>
@@ -143,7 +146,7 @@
             <h4 class="text-2xl font-semibold mt-14 mb-8">Sportswear</h4>
             <div class="flex flex-col lg:flex-row gap-6 items-center justify-start">
                 <!-- card 1 -->
-                <div class="card h-80 w-[245px] shadow-lg p-5 space-y-2">
+                <div class="card h-80 w-[245px] shadow-lg p-5 space-y-2" onclick="FindProductName(this)">
                     <figure class="px-10 pt-10 bg-[#1111110D]">
                         <img class="p-5" src="./images/prod4.png" alt="Shoes" class="rounded-xl" />
                     </figure>
@@ -161,7 +164,7 @@
                 </div>
 
                 <!-- card 2 -->
-                <div class="card h-80 w-[245px] shadow-lg p-5 space-y-2">
+                <div class="card h-80 w-[245px] shadow-lg p-5 space-y-2" onclick="FindProductName(this)">
                     <figure class="px-10 pt-10 bg-[#1111110D]">
                         <img class="p-5" src="./images/prod5.png" alt="Shoes" class="rounded-xl" />
                     </figure>
@@ -179,7 +182,7 @@
                 </div>
 
                 <!-- card 3 -->
-                <div class="card h-80 w-[245px] shadow-lg p-5 space-y-2">
+                <div class="card h-80 w-[245px] shadow-lg p-5 space-y-2" onclick="FindProductName(this)">
                     <figure class="px-10 pt-10 bg-[#1111110D]">
                         <img class="p-5" src="./images/prod6.png" alt="Shoes" class="rounded-xl" />
                     </figure>
@@ -203,7 +206,7 @@
             <h4 class="text-2xl font-semibold mt-14 mb-8">Furniture</h4>
             <div class="flex flex-col lg:flex-row gap-6 items-center justify-start">
                 <!-- card 1 -->
-                <div class="card h-80 w-[245px] shadow-lg p-5 space-y-2">
+                <div class="card h-80 w-[245px] shadow-lg p-5 space-y-2" onclick="FindProductName(this)">
                     <figure class="px-10 pt-10 bg-[#1111110D]">
                         <img class="p-5" src="./images/prod7.png" alt="Shoes" class="rounded-xl" />
                     </figure>
@@ -221,7 +224,7 @@
                 </div>
 
                 <!-- card 2 -->
-                <div class="card h-80 w-[245px] shadow-lg p-5 space-y-2">
+                <div class="card h-80 w-[245px] shadow-lg p-5 space-y-2" onclick="FindProductName(this)">
                     <figure class="px-10 pt-10 bg-[#1111110D]">
                         <img class="p-5" src="./images/prod8.png" alt="Shoes" class="rounded-xl" />
                     </figure>
@@ -239,7 +242,7 @@
                 </div>
 
                 <!-- card 3 -->
-                <div class="card h-80 w-[245px] shadow-lg p-5 space-y-2">
+                <div class="card h-80 w-[245px] shadow-lg p-5 space-y-2" onclick="FindProductName(this)">
                     <figure class="px-10 pt-10 bg-[#1111110D]">
                         <img class="p-5" src="./images/prod9.png" alt="Shoes" class="rounded-xl" />
                     </figure>
@@ -261,6 +264,9 @@
 
     <!-- footer section -->
     <footer></footer>
+
+    <!-- link js file -->
+    <script src="./js/summer-sale.js"></script>
 </body>
 
 </html>
